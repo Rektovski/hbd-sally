@@ -1,0 +1,167 @@
+@keyframes example {
+    0% {
+        background: darkred;
+    }
+    50% {
+        background: black;
+    }
+    100% {
+        background: darkred;
+    }
+}
+
+.huston {
+    animation: example 2s infinite;
+}
+
+@media only screen and (max-width: 600px) {
+    .errorPageBackground {
+        padding: 40px 0 40px 0;
+    }
+}
+
+.errorMessage {
+    position: fixed;
+    bottom: 0;
+    color: #7ee808;
+    font-weight: bold;
+}
+
+.errorPageBackground {
+    z-index: -999999;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.css-typing {
+    /*background: rgba(128, 128, 128, 0.25);*/
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.css-typing p {
+    border-right: .15em solid #77d70f;
+    font-family: "Courier", serif;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+    width: 28ch;
+    -webkit-animation: type 1s steps(40, end);
+    animation: type 1s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 15ch;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(40, end);
+    animation: type2 1s steps(40, end);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 18ch;
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 1s steps(20, end), blink .2s step-end infinite alternate;
+    -webkit-animation-delay: 1s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid #77d70f;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid #77d70f;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #77d70f;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #77d70f;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@-webkit-keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
