@@ -1,5 +1,5 @@
 import "./HBDStyle.css";
-import image from "./img.png";
+import image from "./291782113_5164942763623287_9019968788098319693_n.jpg";
 import {useEffect, useState} from "react";
 
 let intervalId;
@@ -22,11 +22,13 @@ export default function Happy() {
 
     return (
         <div className={'huston text-center'}>
-            <img
-                className={'errorPageBackground'}
-                src={image}
-                alt={'iubilari'}
-            />
+            <div className={'imageContainer'}>
+                <img
+                    className={'errorPageBackground'}
+                    src={image}
+                    alt={'iubilari'}
+                />
+            </div>
             <div className={'errorMessage'}>
                 <div className={'css-typing'}>
                     <p>

@@ -14,6 +14,10 @@
     animation: example 2s infinite;
 }
 
+.imageContainer {
+    height: 50%;
+}
+
 @media only screen and (max-width: 600px) {
     .errorPageBackground {
         padding: 40px 0 40px 0;
@@ -29,7 +33,8 @@
 
 .errorPageBackground {
     z-index: -999999;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
 }
 
